@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:900');
 
 * {
 	margin: 0;
@@ -49,6 +50,7 @@ canvas {
 
 h1 {
 	font-family: 'Anton', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
 	font-size: 14rem;
 	text-align: center;
