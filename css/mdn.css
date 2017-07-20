@@ -82,6 +82,7 @@ h1:after {
 	content: attr(data-blah);
 	z-index: -1;
 	position: absolute;
+    filter: blur(2px);
 	}
 h1:before {
 	top: 0;
