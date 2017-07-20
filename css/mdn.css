@@ -75,13 +75,27 @@ h1 {
         filter: blur(0);
         opacity: 1;        
         }
+    59% {
+        left: 0;
+        }
     60% {
         filter: blur(2px);
-/*        opacity: .5;*/
+        left: -2px;
+        }
+    61% {
+        filter: blur(0);
+        left: 2px;
+        top: 2px;
+        opacity: .5;
+        }
+    62% {
+        filter: blur(2px);
+        left: 0;
+        top: 0;
+        opacity: 1;
         }
     70% {
-        filter: blur(0);
-        opacity: 1;        
+        filter: blur(0);     
         }
     }
 
