@@ -9,7 +9,17 @@
     <title>MDN</title>
     
     <script>
-        
+        document.addEventListener("DOMContentLoaded", function(event) { 
+            var text = ["undone", "done"];
+            var counter = 0;
+            var elem = document.getElementById("changeText");
+            setInterval(change, 3095);
+            function change() {
+             elem.innerHTML = text[counter];
+                counter++;
+                if(counter >= text.length) { counter = 0; }
+            }
+        });
     </script>
 </head>
 <body>
@@ -17,12 +27,10 @@
 <section class="content">    
 	<video src="assets/videos/bg_vid.mp4" autoplay loop muted></video>
     <canvas id="canvas"></canvas>
-
-    <h1 data-blah="mdn">mdn</h1>    
+    <h1 data-blah="mdn" id="changeText">mdn</h1>    
 </section>
 
 
 <script src="js/noise.js"></script>
-
 </body>
 </html>
