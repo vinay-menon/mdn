@@ -57,7 +57,23 @@ h1 {
 	mix-blend-mode: exclusion;
 	color: white;
 	position: relative;
+    animation: 7s out-of-focus infinite;
 	}
+
+@keyframes out-of-focus {
+    55% {
+        filter: blur(0);
+        opacity: 1;        
+        }
+    60% {
+        filter: blur(2px);
+/*        opacity: .5;*/
+        }
+    70% {
+        filter: blur(0);
+        opacity: 1;        
+        }
+    }
 
 h1:before,
 h1:after {
