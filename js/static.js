@@ -1,3 +1,5 @@
+// https://stackoverflow.com/a/22085531/604040
+
 var canvas = document.getElementById('canvas'),
     ctx = canvas.getContext('2d');
 
@@ -32,7 +34,7 @@ function noise(ctx) {
             if (i > band && i < band + 48 * 80) {
                 p = Math.random();
             }
-            color = (100 * p) << 24;
+            color = (150 * p) << 24;
         }
         run -= 1;
         buffer32[i++] = color;
