@@ -16,7 +16,6 @@
             setInterval(change, 3095);
             function change() {
                 elem.innerHTML = text[counter];
-                elem.setAttribute("data-blah", text[counter]);
                 counter++;
                 if(counter >= text.length) { counter = 0; }
             }
@@ -28,7 +27,7 @@
 <section class="content">    
 	<video src="assets/videos/bg_vid.mp4" autoplay loop muted></video>
     <canvas id="canvas"></canvas>
-    <h1 data-blah="mdn" id="changeText">mdn</h1>    
+    <h1 id="changeText">mdn</h1>    
 </section>
 
 

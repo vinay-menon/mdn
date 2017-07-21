@@ -16,7 +16,7 @@
 	justify-content: center;
 	overflow: hidden;
     position: relative;
-/*    background-color: #000;*/
+    background-color: #000;
 	}
 .content:after {
     content: "";
@@ -50,24 +50,25 @@ canvas {
 	top: 0; left: 0;
 	z-index: 2;
 /*    opacity: .5;*/
-/*    filter: invert(1);*/
+    filter: invert(1);
 	}
 
-h1 {
-	font-family: 'Anton', sans-serif;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'VT323', monospace;     
+h1 { 
     font-family: 'Press Start 2P', cursive;
-/*    font-family: 'Geo', sans-serif;*/
     text-transform: uppercase;
 	font-size: 10rem;
 	text-align: center;
 	position: relative;
 	z-index: 999;
-	mix-blend-mode: exclusion;
+	mix-blend-mode: color-dodge;
 	color: white;
 	position: relative;
     animation: 7s out-of-focus infinite;
+    text-shadow: 
+        0 -5px 2px hsla(0,100%,60%,.2),
+        -5px -5px 2px hsla(0,100%,60%,.2), 
+        0 5px 2px hsla(180,100%,50%,.2), 
+        5px 5px 2px hsla(180,100%,50%,.2);
 	}
 
 @keyframes out-of-focus {
@@ -98,23 +99,3 @@ h1 {
         filter: blur(0);     
         }
     }
-
-
-h1:before,
-h1:after {
-	content: attr(data-blah);
-	z-index: -1;
-	position: absolute;
-    filter: blur(2px);
-	}
-h1:before {
-	top: 0;
-	left: -2px;
-	z-index: -1;
-	color: red;
-	}
-h1:after {
-	top: 0;
-	left: 2px;
-	color: cyan;
-	}
