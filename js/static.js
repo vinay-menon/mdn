@@ -22,7 +22,7 @@ function noise(ctx) {
         len = buffer32.length,
         run = 0,
         color = 0,
-        m = Math.random() * 6 + 4,
+        m = Math.random() * 3 + 2,
         band = Math.random() * w * w,
         p = 0,
         i = 0;
@@ -30,7 +30,7 @@ function noise(ctx) {
     for (; i < len;) {
         if (run < 0) {
             run = m * Math.random();
-            p = Math.pow(Math.random(), 0.4);
+            p = Math.pow(Math.random(), 0.2);
             if (i > band && i < band + 48 * 80) {
                 p = Math.random();
             }
