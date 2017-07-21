@@ -61,7 +61,7 @@ h1 {
 	position: relative;
 	z-index: 999;
 	mix-blend-mode: color-dodge;
-	color: white;
+	color: hsla(0,0%,90%,1);
 	position: relative;
     animation: 7s out-of-focus infinite;
     text-shadow: 
