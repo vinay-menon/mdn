@@ -10,7 +10,7 @@
     
     <script>
         document.addEventListener("DOMContentLoaded", function(event) { 
-            var text = ["undone", "done"];
+            var text = ["undone.", "done."];
             var counter = 0;
             var elem = document.getElementById("changeText");
             setInterval(change, 3095);
@@ -23,14 +23,36 @@
     </script>
 </head>
 <body>
+<video src="assets/videos/bg_vid.mp4" autoplay loop muted></video>
+<canvas id="canvas"></canvas>
 
-<section class="content">    
-	<video src="assets/videos/bg_vid.mp4" autoplay loop muted></video>
-    <canvas id="canvas"></canvas>
-    <h1 id="changeText">mdn</h1>    
+<section class="content home-content">    
+    <nav class="main-nav">
+        <p class="name">Midhun</p>
+        <a href="" class="nav-link">works</a>
+        <a href="" class="nav-link">bio</a>
+        <a href="" class="nav-link">contact</a>
+    </nav>    
+    
+    <p id="changeText">done.</p>    
 </section>
 
 
 <script src="js/static.js"></script>
+<script src="js/jq.js"></script>
+<script>
+    function debugLayout(t,e) {
+        t == "on" ? $(e).css("outline", "1px solid red") : $(e).css("outline", "0");
+    }
+    
+    $("body").on("keydown", function(e){
+        if(e.keyCode == 65) {
+            debugLayout("on","*");
+            }
+        if(e.keyCode == 83) {
+            debugLayout("off","*");
+            }
+    });    
+</script>
 </body>
 </html>
