@@ -146,6 +146,7 @@ canvas {
 @media (max-width: 405px) {
     .main-nav {
         width: 100%;
+        justify-content: space-around;
         }   
     .name {
         width: 100%;
