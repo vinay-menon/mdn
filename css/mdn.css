@@ -8,7 +8,8 @@
 	}
 
 body {
-/*    background-color: #000;*/
+    background-color: #000;
+    font-family: 'Muli', sans-serif;
     }
 
 .content {
@@ -39,7 +40,10 @@ body {
 	overflow: hidden;    
     }
 .work:after {
-/*    display: none;*/
+    display: none;
+    }
+.work-detail:after {
+    display: block;
     }
 
 video {
@@ -155,11 +159,14 @@ canvas {
     }
 
 .work {
-    background-color: white;
+    background-color: black;
     flex-direction: column;
     }
 .work .main-nav {
 /*    color: black;*/
+    }
+.work-detail {
+    background-color: white;
     }
 .work-drawings {
     background-image: url(../projects/drawings/sacraments2.jpg);
@@ -171,13 +178,12 @@ canvas {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
     }
 .work-thumbs h1 {
     width: 100%;
     }
 .thumb {
-    width: calc(50%);
-    background-color: #fff;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -185,6 +191,10 @@ canvas {
 .thumb-title {
     display: flex;
     flex-direction: column;
+    font-size: 2rem;
+    font-weight: 900;
+    text-decoration: none;
+    color: white;
     }
 .blurb {
     font-size: 1rem;
@@ -208,7 +218,7 @@ canvas {
     }
 
 h1 {
-    font-family: 'Muli', sans-serif;
+    background-color: white;
     font-size: 12rem;
     margin-bottom: 50px;
     font-size: calc(112.5% + 11vw);
