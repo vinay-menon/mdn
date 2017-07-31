@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/mdn.css">
+
+    <title>MDN</title>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) { 
+            var text = ["undone.", "done."];
+            var counter = 0;
+            var elem = document.getElementById("changeText");
+            setInterval(change, 3095);
+            function change() {
+                elem.innerHTML = text[counter];
+                counter++;
+                if(counter >= text.length) { counter = 0; }
+            }
+        });
+    </script>
+</head>
+<body>
+<section class="content work work-drawings">    
+    <nav class="main-nav">
+        <a href="index.html" class="nav-link name">Midhun Mohan</a>
+        <a href="work.html" class="nav-link">works</a>
+        <a href="" class="nav-link">bio</a>
+        <a href="" class="nav-link">contact</a>
+    </nav>    
+    
+    <article class="content-body">
+        <h1>Drawings</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto placeat suscipit a sed perspiciatis dolorum fuga optio nemo itaque nam! Fugiat blanditiis quod nulla vitae magnam non molestias voluptas quam. Aspernatur rerum iure iste repellendus error. Quae obcaecati et mollitia eveniet dicta dolor sequi libero omnis earum, veritatis dolorum adipisci? Tempore magni dicta, commodi, dolore explicabo natus itaque. In, earum.</p>
+        <p>Quia provident praesentium ut culpa aliquam nihil explicabo excepturi earum sunt illo dolor odio, quos magnam dolores in, expedita impedit necessitatibus itaque accusantium? Quo vero ad culpa ea nesciunt ullam. Cupiditate corporis ipsam quidem vero voluptatem iure cumque vel tempore unde natus ab deserunt obcaecati illum nisi fugiat saepe laborum commodi iusto modi, dolore aspernatur culpa a explicabo! Perferendis, minus? Commodi repudiandae voluptatem dignissimos reiciendis eius in cum aspernatur, laborum pariatur veniam voluptatum corrupti perferendis. Nisi cumque eligendi possimus, voluptate alias, deleniti corporis nam pariatur asperiores autem, perferendis voluptates a. Reiciendis non repudiandae esse vitae temporibus assumenda omnis quod quibusdam, minima in dolorem nam nostrum nisi, tenetur modi, aperiam aliquam inventore. Voluptatem vel iusto rem doloremque maxime ratione temporibus, fuga! Magni neque, id consectetur, atque dolor iste optio. Debitis nam pariatur aliquam dolor ex incidunt, in, distinctio dolorum veritatis ipsa earum laboriosam eos obcaecati cumque! Perferendis placeat voluptatum, enim ducimus!</p>
+        <p>Nam, pariatur dolore eveniet, ab harum optio cumque, aperiam libero adipisci cum deleniti dolorum eum asperiores. Quasi dolorum commodi corporis, iste in ad recusandae, eaque beatae aut quisquam, cumque, consequatur! Officia nesciunt quos doloribus. Culpa dicta, optio consectetur a, obcaecati aspernatur nostrum iure necessitatibus nobis repellat facere nihil soluta sapiente saepe rem! Architecto ipsum, maiores unde dicta officia quia similique!</p>
+    </article>
+</section>
+
+
+<script src="js/static.js"></script>
+<script src="js/jq.js"></script>
+<script>
+    function debugLayout(t,e) {
+        t == "on" ? $(e).css("outline", "1px solid red") : $(e).css("outline", "0");
+    }
+    
+    $("body").on("keydown", function(e){
+        if(e.keyCode == 65) {
+            debugLayout("on","*");
+            }
+        if(e.keyCode == 83) {
+            debugLayout("off","*");
+            }
+    });    
+</script>
+</body>
+</html>
