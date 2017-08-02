@@ -159,7 +159,7 @@ canvas {
     }
 
 .work {
-    background-color: black;
+    background-color: hsl(30,10%,70%);
     flex-direction: column;
     }
 .work .main-nav {
@@ -182,6 +182,18 @@ canvas {
     }
 .work-thumbs h1 {
     width: 100%;
+    color: hsl(12, 100%, 41%);
+    position: relative;
+    }
+.work-thumbs h1 span:nth-child(1) {
+    mix-blend-mode: multiply;
+    color: hsl(231, 108%, 46%);
+    }
+.work-thumbs h1 span:nth-child(2) {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: -1;
     }
 .thumb {
     width: 200px;
@@ -220,7 +232,6 @@ canvas {
     }
 
 h1 {
-    background-color: white;
     font-size: 12rem;
     margin-bottom: 50px;
     font-size: calc(112.5% + 11vw);
