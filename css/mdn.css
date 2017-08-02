@@ -93,6 +93,7 @@ canvas {
     60% {
         filter: blur(2px);
         left: -2px;
+        top: 0;
         }
     61% {
         filter: blur(0);
@@ -186,7 +187,7 @@ canvas {
     background-attachment: fixed;
     }
 .work-thumbs {
-    background-color: hsl(212, 45%, 48%);
+    background-color: #111;
     padding: 50px;
     display: flex;
     flex-direction: row;
@@ -202,17 +203,19 @@ canvas {
     width: 100%;
     color: hsl(65, 100%, 61%);
     position: relative;
-    text-transform: uppercase;
     }
 .work-thumbs h1 span:nth-child(1) {
-    mix-blend-mode: hue;
-    color: hsl(288, 100%, 60%);
+    color: hsl(300, 100%, 62%);
     }
 .work-thumbs h1 span:nth-child(2) {
     position: absolute;
-    top: 5px;
-    left: 5px;
-    z-index: -1;
+    top: 3px;
+    left: 3px;
+/*    z-index: -1;*/
+    mix-blend-mode: color-dodge;
+    text-shadow: 
+        -5px -5px 0 dodgerblue,
+        2px 2px 0 red;
     }
 .thumb {
     width: 200px;
