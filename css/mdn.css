@@ -182,12 +182,12 @@ canvas {
     }
 .work-thumbs h1 {
     width: 100%;
-    color: hsl(12, 100%, 41%);
+    color: hsl(12, 100%, 61%);
     position: relative;
     }
 .work-thumbs h1 span:nth-child(1) {
     mix-blend-mode: multiply;
-    color: hsl(231, 108%, 46%);
+    color: hsl(231, 108%, 66%);
     }
 .work-thumbs h1 span:nth-child(2) {
     position: absolute;
