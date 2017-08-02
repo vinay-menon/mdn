@@ -155,14 +155,19 @@ canvas {
     display: none;
     }
 
-@media (max-width: 405px) {
+@media (max-width: 540px) {
     .main-nav {
         width: 100%;
         justify-content: space-around;
+        padding-left: 0;
         }   
+    .nav-link:nth-child(2) {
+        margin-left: 0;
+        }
     .name {
         width: 100%;
         margin-bottom: 10px;
+        text-align: center;
         } 
     }
 
@@ -187,9 +192,11 @@ canvas {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    border-width: 0 30px;
-    border-style: solid;
-    border-color: white;
+    }
+@media (max-width: 540px) {
+    .work-thumbs {
+        padding: 10px;
+        }
     }
 .work-thumbs h1 {
     width: 100%;
